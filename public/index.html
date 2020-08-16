@@ -35,8 +35,6 @@ const $ = document.querySelector.bind(document);
 
 const log = (...args) => logs.innerText += args.join(' ') + '\n';
 
-navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
-
 // get the current user's audio stream
 function getAudioStream() {
   return navigator.mediaDevices.getUserMedia({audio: true});
